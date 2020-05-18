@@ -1,9 +1,12 @@
+<!--<div class="container">
+  <div class="alert alert-warning" *ngIf="invalidLogin">{{errorMessage}}</div>
+</div>-->
 <div class="container"><br>
   <div class="row">
     <div class="col-6 col-sm-4"></div>
     <div class="col-6 col-sm-4">
       <div class="card text-center" style="width: 25rem;">
-        <img class="card-img-top" src="assets/images/AvtarNew.png" alt="Card image cap" height="140px"
+        <img class="card-img-top" src="../../../assets/images/AvtarNew.png" alt="Card image cap" height="140px"
              width="140px"
              class="img-rounded" class="rounded mx-auto d-block">
         <div class="card-body">
@@ -42,14 +45,11 @@
               >
             </p>
             <br />
-            <button
+            <button (click)="checkLogin()"
               type="submit"
               class="btn btn-block"
-              style="background-color: #00b0ff; color: #fff;"
-              onclick="location.href='/index'"
-            >
-              Log in</button
-            ><br />
+              style="background-color: #00b0ff; color: #fff;">
+              Log in</button><br />
 
             <p class="float-right mt-2">
               New User ?<a routerLink="/register" style="color: #00b0ff;">
