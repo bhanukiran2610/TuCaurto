@@ -8,7 +8,7 @@ import {AuthenticationService} from "../../service/authentication.service";
 })
 export class HeaderComponent implements OnInit {
   //isUserLoggedIn:boolean=false;
-  constructor(private basicAuth:AuthenticationService) { }
+  constructor(public basicAuth:AuthenticationService) { }
 
   ngOnInit(): void {
   }

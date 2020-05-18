@@ -1,7 +1,47 @@
 <!--<div class="container">
   <div class="alert alert-warning" *ngIf="invalidLogin">{{errorMessage}}</div>
 </div>-->
-<div class="container"><br>
+<div class="modal-body">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 m-auto ">
+        <form class="form-container ">
+          <div class="card mt-2 bg-white">
+            <div class="card-title text-center mt-3 ">
+              <img src="../../../assets/images/AvtarNew.png" height="140px" width="140px" class="img-rounded">
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <i class="fa fa-user fa-1x"></i>
+                                                </span>
+                  </div>
+                  <input type="email" class="form-control py-2" id="exampleInputEmail1" placeholder="Enter your email address" required>
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <i class="fa fa-lock fa-1x"></i>
+                                                </span>
+                  </div>
+                  <input type="password" class="form-control py-2" id="exampleInputPassword" placeholder="Enter your password" required>
+                </div>
+                <p class="float-right mt-2"> <a href = "#" target = "_blank" style="color: #00B0FF">Forgot Password?</a></p><br>
+                <button (click)="checkLogin()" type="submit" class="btn btn-block" style="background-color: #00B0FF">Log in</button><br>
+
+                <p class="float-right mt-2">New User ?<a routerLink= "/register" style="color: #00B0FF">  Create Account</a></p><br>
+
+              </form>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<div class="container"><br>
   <div class="row">
     <div class="col-6 col-sm-4"></div>
     <div class="col-6 col-sm-4">
@@ -65,5 +105,5 @@
     <div class="col-6 col-sm-4">
     </div>
   </div>
-</div>
+</div>-->
 

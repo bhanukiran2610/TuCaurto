@@ -16,7 +16,7 @@ import {PropertyViewComponent} from "./components/property-view/property-view.co
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'home', component:HomeComponent},
-  {path:'index',component:IndexComponent, canActivate:[AuthGaurdService]},
+  {path:'index',component:IndexComponent, /*canActivate:[AuthGaurdService]*/},
   {path:'view',component:PropertyViewComponent},
   {path:'login', component:LoginComponent},
   {path:'register', component:RegisterComponent},
